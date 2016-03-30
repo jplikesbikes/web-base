@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "repository": "jplikesbikes/web-base",
   "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js --fix src/ test/",
-    "compile": "rm -rf ./bin && ./node_modules/webpack/bin/webpack.js",
-    "serve": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
+    "linter": "./node_modules/eslint/bin/eslint.js --fix src/ test/",
+    "compiler": "rm -rf ./bin && ./node_modules/webpack/bin/webpack.js",
+    "server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register test/**/*.spec.js",
-    "test-web": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js \"mocha!../test/allTests.js\" --target web --output-file test.bundle.js"
+    "web-test": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js \"mocha!../test/allTests.js\" --target web --output-file test.bundle.js"
   },
   "dependencies": {},
   "devDependencies": {
