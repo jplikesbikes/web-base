@@ -45,7 +45,7 @@
   },
 	"config": {
     "ghooks": {
-      "pre-commit": "npm run linter"
+      "pre-commit": "npm run linter-nofix"
     }
   }
 
