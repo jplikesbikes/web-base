@@ -23,8 +23,7 @@ Your good to go!
 ```
 npm install
 npm test // run tests
-npm run linter // lint
-npm run linter -- -fix // lint and auto fix errors
+npm run linter // lint and auto fix errors
 npm run web-test //  run tests in browser with webpack-dev-server
 open localhost:8080/test.bundle
 npm run server // run webpack-dev-server with hot module reloading
