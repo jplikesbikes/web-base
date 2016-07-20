@@ -5,6 +5,7 @@
   "scripts": {
     "compiler": "rm -rf ./bin && ./node_modules/webpack/bin/webpack.js",
     "linter": "./node_modules/eslint/bin/eslint.js --fix src/ test/",
+    "linter-nofix": "./node_modules/eslint/bin/eslint.js src/ test/",
     "server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register test/**/*.spec.js",
     "web-test": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js \"mocha!../test/allTests.js\" --target web --output-file test.bundle.js --hot --inline --progress"
