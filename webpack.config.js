@@ -10,6 +10,7 @@ module.exports = {
 			{ test: /\.(eot|woff|woff2|ttf|svg|png|jpg)(\?.*)?$/, loaders: ['file'] },
 			{ test: /\.css$/, loaders: ['style', 'css', 'postcss'] },
 			{ test: /\.less$/, loaders: ['style', 'css', 'postcss', 'less'] },
+			{ test: /\.(sass|scss)$/, loaders: ['style', 'css', 'postcss', 'sass'] },
 			{ test: /\.tpl\.jade$/, loaders: ['html?removeRedundantAttributes=false', 'jade-html'] },
 			{ test: /\.tpl\.html$/, loaders: ['html?removeRedundantAttributes=false'] },
 			{ test: /[^\.][^t][^p][^l]\.jade$/, loaders: ['file?name=[name].html', 'jade-html' ] },
