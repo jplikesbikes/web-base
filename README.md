@@ -35,7 +35,9 @@ Watching Tests
 npm test -- --watch
 ```
 
-Compile into `bin`
+Compile into `bin` and deploy to s3
 ```
 npm run compiler
+npm run aws-deploy s3://your-bucket-here
 ```
+note you need the aws cli installed for deployment to work
