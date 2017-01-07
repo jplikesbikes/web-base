@@ -9,11 +9,10 @@ module.exports = {
 			{ test: /\.js$/, exclude: /node_modules/, loaders: ['babel'] },
 			{ test: /\.(eot|woff|woff2|ttf|svg|png|jpg)(\?.*)?$/, loaders: ['file'] },
 			{ test: /\.css$/, loaders: ['style', 'css', 'postcss'] },
-			{ test: /\.less$/, loaders: ['style', 'css', 'postcss', 'less'] },
 			{ test: /\.(sass|scss)$/, loaders: ['style', 'css', 'postcss', 'sass'] },
-			{ test: /\.tpl\.jade$/, loaders: ['html?removeRedundantAttributes=false', 'jade-html'] },
+			{ test: /\.tpl\.pug$/, loaders: ['html?removeRedundantAttributes=false', 'pug-html?exports=false'] },
 			{ test: /\.tpl\.html$/, loaders: ['html?removeRedundantAttributes=false'] },
-			{ test: /[^\.][^t][^p][^l]\.jade$/, loaders: ['file?name=[name].html', 'jade-html' ] },
+			{ test: /[^\.][^t][^p][^l]\.pug/, loaders: ['file?name=[name].html', 'pug-html?exports=false' ] },
 			{ test: /[^\.][^t][^p][^l]\.html$/, loaders: ['file?name=[name].[ext]'] }
 		]
 	},
@@ -31,7 +30,7 @@ module.exports = {
 		})
 	],
 	debug: true,
-	entry: { app: ['./index.jade', './app.js'] },
+	entry: { app: ['./index.pug', './app.js'] },
 	output: {
 		filename: '[name].bundle.js',
 		path: path.resolve(process.cwd(), 'bin')
