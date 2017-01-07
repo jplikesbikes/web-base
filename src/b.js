@@ -1,7 +1,5 @@
-'use strict';
+import sum from './a';
 
-import { sum } from './a';
-
-export function add2(x) {
+export default function add2(x) {
 	return sum(x, 2);
 }

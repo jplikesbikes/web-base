@@ -1,10 +1,14 @@
 'use strict';
 module.exports = {
+	settings: {
+		'import/resolver': 'webpack',
+	},
 	extends: 'airbnb/base',
 	root: true,
 	rules: {
 		// use tabs only
 		indent: [2, 'tab', { SwitchCase: 1 }],
+		'no-tabs': [0],
 
 		// use one space anywhere we allow space
 		'no-multi-spaces': [2],
@@ -31,6 +35,7 @@ module.exports = {
 		'max-len': [2, 120],
 	},
 	env: {
-		mocha: true
-	}
+		browser: true,
+		mocha: true,
+	},
 };

@@ -1,5 +1,4 @@
-'use strict';
-import { add2 } from './b';
+import add2 from './b';
 import './main.scss';
 
 const resultEl = document.querySelector('#result');

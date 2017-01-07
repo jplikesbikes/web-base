@@ -1,6 +1,6 @@
-'use strict';
-import { add2 } from '../src/b';
 import * as chai from 'chai';
+import add2 from '../src/b';
+
 const assert = chai.assert;
 
 describe('ObjB', () => {
