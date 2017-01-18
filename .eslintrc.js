@@ -1,8 +1,5 @@
 'use strict';
 module.exports = {
-	settings: {
-		'import/resolver': 'webpack',
-	},
 	extends: 'airbnb/base',
 	root: true,
 	rules: {
